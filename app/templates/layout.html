@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mac Loves The Kids</title>
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='/css/layout_style.css') }} ">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!DOCTYPE HTML>
+    <html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="x-ua-compatible " content="IE=Edge " />
+        <meta name="viewport " content="width=device-width, initial-scale=1.0 " />
+        <link rel="stylesheet " type="text/css " href="http://sharepoint/sites/tesseract/Shared%20Documents/TESSERACT/tesseract.min.css " />
+        <style>
+            body {
+                background: #efefef;
+            }
+            
+            .fmHero {
+                height: 500px;
+            }
+        </style>
+    </head>
+
+    <body class="hasNav ">
+        <div id="fmNavToggle " class="withImg "><i class="material-icons ">menu</i><i>Menu</i> <img style="float:right; margin-right: 40px; margin-top: 7px " class="fmLogoImg " src="http://sharepoint/sites/tesseract/SiteAssets/p1_for_Animation.png "></div>
+        <nav id="fmNav ">
+            <ul class="fmNavList ">
+                <li class="fmPagename ">
+                    <li class="fmNavDrop "><a>About Us</a>
+                        <ul>
+                            <li><a>Who  is Mac?</a></li>
+                            <li><a>History</a></li>
+                        </ul>
+                    </li>
+                    <li class="fmNavDrop "><a>What We Do</a>
+                        <ul>
+                            <li><a>Youth Programs</li></a>
+                                <li><a>Community Programs</li></a>
+                        </ul>
+                        </li>
+                        <li class="fmNavDrop "><a>Get Involved</a>
+                            <ul>
+                                <li><a>Donate</li></a>
+                                    <li><a>Volunteer</li></a>
+                                        <li><a>Partner With Us</li></a>
+                                        </li>
+                            </ul>
+        </nav>
+
+        <section class="fmHero ">
+
+            <div class="fmHeroContent ">
+                <img src="https://fnma.sharepoint.com/sites/tesseract/SiteAssets/tesseract-01.png " />
+
+        </section>
+        <section class="fmContainer ">
+            <br>
+            <div class="fmRow ex ">
+                <div class="fmCol c6 ">
+                    <div class="paddingCont ">
+
+                        {% block main %} {% endblock %}
+                        <script src="https://fnma.sharepoint.com/sites/tesseract/Shared%20Documents/TESSERACT/jquery1.10.2.min.js "></script>
+                        <script src="https://fnma.sharepoint.com/sites/tesseract/Shared%20Documents/TESSERACT/tesseract.min.js "></script>
+
+                        <section class="fmFooter ">
+                            <div class="footerActions ">
+                                <a class="smooth ">About Us</a> |
+                                <a class="smooth ">Services</a> |
+                                <a class="smooth ">Get Involved</a> |
+                                <a class="smooth ">Donate</a>
+                            </div>
+                            Live. Love. Laugh. Prosper. Aspire. {# <img class="footerLogo " src="Images/logo212x63.png " /> #}
+                            <span class="footerCopy ">
+<script type="text/javascript ">
+  document.write(new Date().getFullYear());
+</span>
+                            </script>
+                    </div>
+                    </section>
+                    <script src="http://sharepoint/sites/tesseract/Shared%20Documents/TESSERACT/jquery1.10.2.min.js "></script>
+                    <script src="http://sharepoint/sites/tesseract/Shared%20Documents/TESSERACT/tesseract.min.js "></script>
+    </body>
+
+    </html>
+    <!-- partial -->
+    <script src="{{ url_for( 'static', filename='/js/layout_script.js') }} "></script>
+
+</body>
+
+</html>
